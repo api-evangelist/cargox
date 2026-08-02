@@ -1,17 +1,47 @@
 aid: cargox
-name: Cargox
-description: 'Cargox is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+name: Cargo X
+description: 'Cargo X (CargoX) is a Sao Paulo based Brazilian logistics technology
+  and fintech company, founded in 2013, that operates one of Brazil''s largest digital
+  freight marketplaces - matching shippers (embarcadores) with carriers (transportadoras)
+  and independent truck drivers. Beyond freight brokerage the platform provides dedicated
+  freight desk operations, driver qualification and real-time cargo monitoring, automated
+  issuance of Brazilian transport tax documents (CT-e and MDF-e), cargo insurance,
+  receivables financing and working-capital credit for carriers, and green-freight
+  / ESG programs that reduce empty return trips. The company reached unicorn status
+  with a USD 200M Series F in October 2021 co-led by Tencent and SoftBank, with Valor
+  Capital Group, Lightrock and Oikos participating.'
 url: https://raw.githubusercontent.com/api-evangelist/cargox/refs/heads/main/apis.yml
+image: https://cargox.com.br/favicon.ico
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+x-disambiguation: 'Two unrelated companies use the CargoX name. This repo profiles
+  Cargo X of Brazil (cargox.com.br) - the digital freight marketplace and logistics
+  fintech listed on Hiive. It is NOT CargoX of Slovenia (cargox.io / cargox.digital),
+  the blockchain document transfer / electronic bill of lading company, which does
+  publish a public REST API, Swagger schemas and a Postman collection at developer.cargox.digital.
+  Do not harvest cargox.digital artifacts into this repo - that company warrants its
+  own provider repo keyed to its own domain.'
+x-contract-discovery:
+  date: '2026-08-02'
+  result: none
+  note: 'No public machine-readable contract found. Probed cargox.com.br root for
+    /openapi.json, /swagger.json, /api-docs, /docs, /llms.txt and the full /.well-known/
+    set (all 404); no api/app/developer/docs subdomain resolves; Certificate Transparency
+    (certspotter) shows only cargox.com.br and www.cargox.com.br ever issued; no GitHub
+    organization; no first-party package on npm, PyPI, RubyGems or Packagist.'
 specificationVersion: '0.20'
 created: '2026-08-02'
 modified: '2026-08-02'
 tags:
 - Company
+- Logistics
+- Freight
+- Transportation
+- Trucking
+- Marketplace
+- Fintech
+- Supply Chain
+- Brazil
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +49,28 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/cargox-domain-security.yml
+- type: LLMsTxt
+  url: llms/cargox-llms.txt
 - type: Website
+  url: https://cargox.com.br/
+- type: Blog
+  url: https://cargox.com.br/blog/
+- type: Support
+  url: https://cargox.com.br/contato/
+- type: PrivacyPolicy
+  url: https://cargox.com.br/politica-de-privacidade
+- type: LinkedIn
+  url: https://www.linkedin.com/company/cargoxbr
+- type: Facebook
+  url: https://www.facebook.com/cargoxbr
+- type: Instagram
+  url: https://www.instagram.com/cargoxbr/
+- type: SecondaryMarket
   url: https://www.hiive.com/securities/cargox-stock
+x-enrichment:
+  date: '2026-08-02'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1

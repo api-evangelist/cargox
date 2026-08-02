@@ -1,0 +1,41 @@
+# Cargo X
+
+> Cargo X (commonly written CargoX) is a Brazilian logistics technology and fintech company headquartered in Sao Paulo, founded in 2013. It operates one of Brazil's largest digital freight marketplaces, matching shippers (embarcadores) with carriers (transportadoras) and independent truck drivers, and layers transport-management technology and credit products on top of that marketplace.
+
+Cargo X is a private company. It reached unicorn status with a USD 200M Series F in October 2021, co-led by Tencent and SoftBank with participation from Valor Capital Group, Lightrock and Oikos. Shares trade on private secondary marketplaces such as Hiive.
+
+**Disambiguation.** There are two unrelated companies using the CargoX name. This document describes **Cargo X of Brazil (cargox.com.br)**, the freight marketplace and logistics fintech. It is **not** CargoX of Slovenia (cargox.io / cargox.digital), the blockchain document transfer / electronic bill of lading company, which publishes its own developer platform and REST API at developer.cargox.digital. Do not attribute the cargox.digital API to this company.
+
+## What it does
+
+- **Freight marketplace** — connects shippers with a national network of carriers and owner-operator truck drivers, using matching algorithms over demand and carrier performance to reduce empty return trips.
+- **Full truckload (FTL) transport** — dedicated freight desk operations, driver qualification and screening, and real-time cargo monitoring.
+- **Fiscal document automation** — automated issuance of Brazilian transport tax documents, CT-e (Conhecimento de Transporte Eletronico) and MDF-e (Manifesto Eletronico de Documentos Fiscais), plus cargo insurance.
+- **Logistics fintech** — receivables financing and working-capital credit for carriers, including advances against freight value, underwritten on the shipper's credit rather than the carrier's.
+- **ESG / green freight** — emissions-reduction programs run with shipper partners, built on network optimization and reduced empty running.
+
+## Public API surface
+
+Cargo X (Brazil) publishes **no public developer program**. As of 2026-08-02 there is no developer portal, no API reference, no OpenAPI/Swagger document, no GraphQL endpoint, no MCP server, no A2A agent card, no SDKs on any public package registry, and no public GitHub organization. Integrations with shipper ERP/TMS systems appear to be arranged commercially rather than through self-service documentation.
+
+Probes performed and their results are recorded in this repository:
+
+- `well-known/cargox-well-known.yml` — every `/.well-known/*` discovery path returns 404
+- `security/cargox-domain-security.yml` — TLS/HSTS/DNS posture for cargox.com.br
+
+If you need integration access, use the commercial contact channel below.
+
+## Links
+
+- [Website](https://cargox.com.br/): company site (Portuguese)
+- [Shippers / Embarcadores](https://cargox.com.br/embarcadores/): shipper-facing offering
+- [Drivers / Caminhoneiros](https://cargox.com.br/caminhoneiros/): driver-facing offering
+- [Blog](https://cargox.com.br/blog/): logistics and transport-technology articles
+- [Contact](https://cargox.com.br/contato/): commercial and support contact
+- [Privacy Policy](https://cargox.com.br/politica-de-privacidade): LGPD privacy notice
+- [LinkedIn](https://www.linkedin.com/company/cargoxbr): company profile
+
+## Optional
+
+- [Hiive listing](https://www.hiive.com/securities/cargox-stock): private secondary-market profile
+- [APIs.io provider profile](https://apis.io/providers/cargox/): API Evangelist network profile

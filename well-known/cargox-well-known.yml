@@ -1,0 +1,35 @@
+generated: '2026-08-02'
+method: probed
+source: live GET probes of the /.well-known/ discovery surface
+host: https://cargox.com.br
+note: >-
+  No /.well-known/ document is published on the Cargo X (Brazil) web host. Every
+  path below returned HTTP 404 (text/plain "Not Found") from the CloudFront origin
+  serving cargox.com.br. Recorded as negative evidence so later rounds do not
+  re-probe blindly. No WellKnown or SecurityTxt pointer is wired in apis.yml
+  because nothing was found.
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
+- path: /.well-known/agent-card.json
+  status: 404
+- path: /.well-known/agent.json
+  status: 404
+x-evidence:
+  fetched: '2026-08-02'
+  hosts_probed:
+  - cargox.com.br
+  hosts_not_resolving:
+  - api.cargox.com.br
+  - app.cargox.com.br
+  - developer.cargox.com.br
+  - developers.cargox.com.br
+  - docs.cargox.com.br
