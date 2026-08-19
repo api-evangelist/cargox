@@ -29,7 +29,7 @@ x-contract-discovery:
     set (all 404); no api/app/developer/docs subdomain resolves; Certificate Transparency
     (certspotter) shows only cargox.com.br and www.cargox.com.br ever issued; no GitHub
     organization; no first-party package on npm, PyPI, RubyGems or Packagist.'
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-08-02'
 modified: '2026-08-02'
 tags:
