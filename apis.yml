@@ -11,6 +11,17 @@ description: 'Cargo X (CargoX) is a Sao Paulo based Brazilian logistics technolo
   with a USD 200M Series F in October 2021 co-led by Tencent and SoftBank, with Valor
   Capital Group, Lightrock and Oikos participating.'
 url: https://raw.githubusercontent.com/api-evangelist/cargox/refs/heads/main/apis.yml
+deliveryModel:
+  model: unknown
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-28'
+  method: derived
 image: https://cargox.com.br/favicon.ico
 x-type: company
 x-source: harvest:secondary-market
